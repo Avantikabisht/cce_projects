@@ -1,0 +1,23 @@
+<html> 
+<head>
+ <title> Image Drop Down Select </title> 
+<style type="text/css"> .SBox { display:none; }
+  </style>
+ <script type="text/javascript"> // For: http://www.codingforums.com/showthread.php?t=211072  function changeImg(info) 
+{ if (info == '') { return; } 
+document.getElementById('mainImage').src = info; document.getElementById('SBox').style.display = 'none'; }
+ </script> 
+ </head>
+ <body> 
+ <div id="imgContent">
+ <img id="mainImage" src="av.jpg" onclick="document.getElementById('SBox').style.display='block'">
+<br> 
+<select id="SBox" onchange="changeImg(this.value)" style="display:none">
+ <option value=''>Choose</option>
+ <option value='http://www.nova.edu/hpd/otm/pics/4fun/11.jpg'>11</option>
+ <option value='http://www.nova.edu/hpd/otm/pics/4fun/12.jpg'>12</option>
+ <option value='http://www.nova.edu/hpd/otm/pics/4fun/13.jpg'>13</option>
+ <option value='http://www.nova.edu/hpd/otm/pics/4fun/14.jpg'>14</option> 
+<option value='http://www.nova.edu/hpd/otm/pics/4fun/15.jpg'>15</option>
+ </select> </div> </body>
+</html>
